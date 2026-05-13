@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tour Details</title>
+    <style>
+        :root {
+            --primary: #007aff;
+            --success: #34c759;
+            --dark: #1c1c1e;
+            --light: #f2f2f7;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light);
+            color: var(--dark);
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 { font-size: 24px; margin-bottom: 5px; }
+        p { color: #666; margin-bottom: 25px; }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: transform 0.1s ease;
+        }
+        .btn:active { transform: scale(0.98); }
+        .btn-map { background-color: var(--primary); color: white; }
+        .btn-call { background-color: var(--success); color: white; }
+        .btn-review { background-color: #ff9500; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to the Tour!</h1>
+        <p>Find our restaurant location, contact details, or leave us a review below.</p>
+
+        <!-- 1. RESTAURANT LOCATION BUTTON -->
+        <!-- REPLACE THE GOOGLE MAPS LINK BELOW WITH YOUR RESTAURANT'S LINK -->
+        <a href="google.com" target="_blank" class="btn btn-map">
+            📍 Open Restaurant Location
+        </a>
+
+        <!-- 2. EMERGENCY PHONE BUTTON -->
+        <!-- REPLACE WITH YOUR PHONE NUMBER (KEEP THE + AND COUNTRY CODE) -->
+        <a href="tel:+385911234567" class="btn btn-call">
+            📞 Running Late? Call Me
+        </a>
+
+        <!-- 3. COMPANY REVIEW BUTTON -->
+        <!-- REPLACE WITH YOUR TRIPADVISOR OR GOOGLE REVIEW LINK -->
+        <a href="tripadvisor.com" target="_blank" class="btn btn-review">
+            ⭐ Leave Us a Review
+        </a>
+    </div>
+
+</body>
+</html>
